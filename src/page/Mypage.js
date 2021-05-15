@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../component/Button';
 import Display from '../component/Dispaly';
+import Clock from '../component/Clock';
 
 export default function Mypage() {
     const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ export default function Mypage() {
             <Button clickEvent={clickHandle} value={3} />
             <Button clickEvent={clickHandle} value={5} />
             <Display count={count} />
+            <Clock />
         </>
     );
 }
